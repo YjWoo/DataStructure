@@ -1,7 +1,7 @@
 # DataStructure
 DataStructure（Java）
 
-使用Java语言实现常见数据结构及相关算法
+巩固基础，使用Java语言实现常见数据结构及相关算法
 
 # 目录结构
 ## algorithm
@@ -14,6 +14,16 @@ DataStructure（Java）
 
 线性表数据结构
 
-- Seq_list：顺序表
+- Seq_List：顺序表
 
-- Single_linked_list：单链表
+- Single_Linked_List：单链表
+
+## queue
+
+队列数据结构
+
+- Seq_Queue：顺序队列
+
+- Linked_Queue：链队列
+
+- Linked_Queue_Node：链队节点

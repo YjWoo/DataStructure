@@ -1,8 +1,8 @@
 package algorithm;
 
-import linear_list.Single_linked_list;
+import linear_list.Single_Linked_List;
 
-public class Single_linked_list_algo {
+public class Single_Linked_List_Algo {
 
     /**
      * 尾插法建单链表
@@ -12,13 +12,13 @@ public class Single_linked_list_algo {
      * @param n
      * @return 已创建单链表
      */
-    public Single_linked_list createList(int a[], int n) {
+    public static Single_Linked_List createList(int a[], int n) {
 	if (n > a.length)
 	    return null;
-	Single_linked_list r = new Single_linked_list();// r终端节点
-	Single_linked_list list = new Single_linked_list();
+	Single_Linked_List r = new Single_Linked_List();// r终端节点
+	Single_Linked_List list = new Single_Linked_List();
 	for (int i = 0; i < n; i++) {
-	    Single_linked_list s = new Single_linked_list();// s新节点
+	    Single_Linked_List s = new Single_Linked_List();// s新节点
 	    s.data = a[i];
 	    r.next = s;
 	    r = r.next;
@@ -36,8 +36,8 @@ public class Single_linked_list_algo {
      * @param x查找值
      * @return 查找结果
      */
-    public Single_linked_list findNode(Single_linked_list l, int x) {
-	Single_linked_list list = new Single_linked_list();
+    public static Single_Linked_List findNode(Single_Linked_List l, int x) {
+	Single_Linked_List list = new Single_Linked_List();
 	list = l;
 	while (list != null) {
 	    if (list.data == x)
@@ -53,8 +53,8 @@ public class Single_linked_list_algo {
      * @param l目标单链表
      * @param x删除值
      */
-    public void removeNode(Single_linked_list l, int x) {
-	Single_linked_list list = new Single_linked_list();
+    public static void removeNode(Single_Linked_List l, int x) {
+	Single_Linked_List list = new Single_Linked_List();
 	list = l;
 	if (list.data == x) {
 	    list = list.next;

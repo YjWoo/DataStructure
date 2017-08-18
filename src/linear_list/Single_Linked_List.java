@@ -6,14 +6,14 @@ package linear_list;
  * @author Miracle
  *
  */
-public class Single_linked_list {
+public class Single_Linked_List {
     public int data;
-    public Single_linked_list next;
+    public Single_Linked_List next;
 
     @Override
     public String toString() {
 	StringBuilder s = new StringBuilder();
-	Single_linked_list r = next;
+	Single_Linked_List r = next;
 	s.append(data);
 	while (r != null) {
 	    s.append(" → ");

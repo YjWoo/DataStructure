@@ -8,10 +8,10 @@ import java.util.Arrays;
  * @author Miracle
  *
  */
-public class Seq_list {
-    public static int COUNT = 40;
+public class Seq_List {
+    public static int maxSize = 40;
 
-    private int data[] = new int[COUNT];
+    private int data[] = new int[maxSize];
     private int length;
 
     public int getLength() {
@@ -27,7 +27,7 @@ public class Seq_list {
     }
 
     public void setData(int[] data) {
-	if (data.length <= COUNT) {
+	if (data.length <= maxSize) {
 	    for (int i = 0; i < data.length; i++) {
 		this.data[i]=data[i];
 	    }
@@ -38,11 +38,11 @@ public class Seq_list {
 	this.data[p] = e;
     }
 
-    public Seq_list() {
+    public Seq_List() {
     }
 
-    public Seq_list(int data[]) {
-	if (data.length <= COUNT) {
+    public Seq_List(int data[]) {
+	if (data.length <= maxSize) {
 	    this.length = data.length;
 	    setData(data);
 	}
