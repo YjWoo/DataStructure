@@ -39,18 +39,19 @@ public class Seq_Stack_Algo {
 	st.data[++st.top] = x;
 	return true;
     }
-    
+
     /**
      * 出栈
+     * 
      * @param st目标栈
      * @return
      */
     @SuppressWarnings("unchecked")
     public static <T> T Pop(Seq_Stack st) {
-	if (st.top==-1) {
+	if (st.top == -1) {
 	    return null;
 	}
-	T x=(T)st.data[st.top];
+	T x = (T) st.data[st.top];
 	st.top--;
 	return x;
     }

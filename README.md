@@ -33,3 +33,5 @@ DataStructure（Java）
 栈数据结构
 
 - Seq_Stack：顺序栈
+
+- Linked_Stack：链栈
