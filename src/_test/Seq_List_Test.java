@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Seq_List_Algo;
+import _algorithm.Seq_List_Algo;
 import linear_list.Seq_List;
 
 public class Seq_List_Test {

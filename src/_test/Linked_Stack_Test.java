@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Linked_Stack_Algo;
+import _algorithm.Linked_Stack_Algo;
 import stack.Linked_Stack;
 
 public class Linked_Stack_Test {

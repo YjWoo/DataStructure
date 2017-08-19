@@ -1,4 +1,4 @@
-package algorithm;
+package _algorithm;
 
 import queue.Linked_Queue;
 import queue.Linked_Queue_Node;

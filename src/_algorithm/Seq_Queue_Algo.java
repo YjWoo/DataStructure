@@ -1,4 +1,4 @@
-package algorithm;
+package _algorithm;
 
 import queue.Seq_Queue;
 

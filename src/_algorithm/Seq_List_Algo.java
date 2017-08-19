@@ -1,4 +1,4 @@
-package algorithm;
+package _algorithm;
 
 import linear_list.Seq_List;
 

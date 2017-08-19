@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Linked_Queue_Algo;
+import _algorithm.Linked_Queue_Algo;
 import queue.Linked_Queue;
 
 public class Linked_Queue_Test {

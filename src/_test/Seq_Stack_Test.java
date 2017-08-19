@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Seq_Stack_Algo;
+import _algorithm.Seq_Stack_Algo;
 import stack.Seq_Stack;
 
 public class Seq_Stack_Test {

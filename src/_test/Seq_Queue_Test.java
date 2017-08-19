@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Seq_Queue_Algo;
+import _algorithm.Seq_Queue_Algo;
 import queue.Seq_Queue;
 
 public class Seq_Queue_Test {

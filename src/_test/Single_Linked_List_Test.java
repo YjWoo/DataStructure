@@ -1,6 +1,6 @@
-package test;
+package _test;
 
-import algorithm.Single_Linked_List_Algo;
+import _algorithm.Single_Linked_List_Algo;
 import linear_list.Single_Linked_List;
 
 public class Single_Linked_List_Test {
