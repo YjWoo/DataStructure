@@ -27,3 +27,9 @@ DataStructure（Java）
 - Linked_Queue：链队列
 
 - Linked_Queue_Node：链队节点
+
+## stack
+
+栈数据结构
+
+- Seq_Stack：顺序栈
