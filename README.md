@@ -4,10 +4,10 @@ DataStructure（Java）
 巩固基础，使用Java语言实现常见数据结构及相关算法
 
 # 目录结构
-## algorithm
+## _algorithm
 所有数据结构对应算法置于该包下
 
-## test
+## _test
 所有测试类置于该包下
 
 ## linear_list
@@ -35,3 +35,9 @@ DataStructure（Java）
 - Seq_Stack：顺序栈
 
 - Linked_Stack：链栈
+
+## matrix
+
+矩阵
+
+- Array_Matrix：二维数组-矩阵
