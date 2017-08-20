@@ -2,7 +2,7 @@ package stack;
 
 /**
  * 顺序栈
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Seq_Stack {

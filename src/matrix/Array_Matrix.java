@@ -2,7 +2,7 @@ package matrix;
 
 /**
  * 定义多维数组-矩阵
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Array_Matrix {

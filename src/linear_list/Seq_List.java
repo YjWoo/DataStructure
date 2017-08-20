@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 顺序表定义
  * 
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Seq_List {

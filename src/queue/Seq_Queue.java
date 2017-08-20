@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * 顺序队列
  * 
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Seq_Queue{

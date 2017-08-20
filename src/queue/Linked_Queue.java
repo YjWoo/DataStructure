@@ -3,7 +3,7 @@ package queue;
 /**
  * 链队
  * 
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Linked_Queue {

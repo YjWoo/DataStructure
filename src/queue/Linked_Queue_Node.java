@@ -1,7 +1,7 @@
 package queue;
 /**
  * 链队节点
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Linked_Queue_Node {

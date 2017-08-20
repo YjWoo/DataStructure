@@ -3,7 +3,7 @@ package stack;
 /**
  * 链栈
  * 
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Linked_Stack {

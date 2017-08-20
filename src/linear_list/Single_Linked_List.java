@@ -3,7 +3,7 @@ package linear_list;
 /**
  * 单链表定义
  * 
- * @author Miracle
+ * @author YjWoo
  *
  */
 public class Single_Linked_List {
