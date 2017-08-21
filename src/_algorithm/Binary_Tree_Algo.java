@@ -20,8 +20,10 @@ public class Binary_Tree_Algo {
 	    return (lnode > rnode ? lnode : rnode) + 1;
 	}
     }
+
     /**
      * 根据给定数组生成完全二叉树
+     * 
      * @param target目标数组
      * @return 完全二叉树
      */
@@ -56,40 +58,44 @@ public class Binary_Tree_Algo {
 	}
 	return node;
     }
+
     /**
      * 先序遍历：根--->左--->右
+     * 
      * @param node目标二叉树根节点
      */
     public static void preOrder(Binary_Tree node) {
-	if (node!=null) {
-	    System.out.print(node.data.toString()+" → ");
+	if (node != null) {
+	    System.out.print(node.data.toString() + " → ");
 	    preOrder(node.lchild);
 	    preOrder(node.rchild);
 	}
     }
-    
+
     /**
      * 中序遍历：左--->根--->右
+     * 
      * @param node目标二叉树根节点
      */
     public static void inOrder(Binary_Tree node) {
-	if (node!=null) {
+	if (node != null) {
 	    inOrder(node.lchild);
-	    System.out.print(node.data.toString()+" → ");
+	    System.out.print(node.data.toString() + " → ");
 	    inOrder(node.rchild);
 	}
     }
-    
+
     /**
      * 后序遍历：左--->右--->根
+     * 
      * @param node目标二叉树根节点
      */
     public static void postOrder(Binary_Tree node) {
-	if (node!=null) {
+	if (node != null) {
 	    postOrder(node.lchild);
 	    postOrder(node.rchild);
-	    System.out.print(node.data.toString()+" → ");
+	    System.out.print(node.data.toString() + " → ");
 	}
     }
-    
+
 }
