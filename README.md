@@ -7,6 +7,8 @@ DataStructure（Java）
 ## _algorithm
 所有数据结构对应算法置于该包下
 
+- _Sort：排序算法
+
 ## _test
 所有测试类置于该包下
 
