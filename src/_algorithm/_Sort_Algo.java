@@ -6,7 +6,7 @@ package _algorithm;
  * @author YjWoo
  *
  */
-public class _Sort {
+public class _Sort_Algo {
     /**
      * 直接插入排序 时间复杂度O(n2)
      * 
