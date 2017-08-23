@@ -9,7 +9,8 @@ public class _Sort_Test {
 	// _Sort.insertSort(aa);
 	// _Sort.bubbleSort(aa);
 	// _Sort.quickSort(aa, 0, aa.length-1);
-	_Sort.selectSort(aa);
+	//_Sort.selectSort(aa);
+	_Sort.heapSort(aa);
 
 	for (int i = 0; i < aa.length; i++) {
 	    System.out.print(aa[i] + " ");

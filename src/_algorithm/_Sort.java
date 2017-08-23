@@ -78,22 +78,72 @@ public class _Sort {
 	    }
 	}
     }
+
     /**
      * 简单选择排序 时间复杂度O(n2)
+     * 
      * @param R目标数组
      */
     public static void selectSort(int[] R) {
-	int k,temp;
+	int k, temp;
 	for (int i = 0; i < R.length; i++) {
-	    k=i;
-	    for (int j = i+1; j < R.length; j++) {
-		if (R[k]>R[j]) {
-		    k=j;
+	    k = i;
+	    for (int j = i + 1; j < R.length; j++) {
+		if (R[k] > R[j]) {
+		    k = j;
 		}
 	    }
-	    temp=R[i];
-	    R[i]=R[k];
-	    R[k]=temp;
+	    temp = R[i];
+	    R[i] = R[k];
+	    R[k] = temp;
 	}
     }
+
+    /**
+     * 调顶堆
+     * 
+     * @param R
+     * @param low
+     * @param high
+     */
+    private static void Sift(int[] R, int low, int high) {
+	int i = low;
+	int j = 2 * i;
+	if (i == 0)
+	    j = 1;
+	int temp = R[i];
+	while (j <= high - 1) {
+	    // 比较左右节点
+	    if (j < high - 1 && R[j] < R[j + 1])
+		++j;
+	    if (temp < R[j]) {
+		R[i] = R[j];
+		i = j;
+		j = 2 * i;
+	    } else {
+		break;
+	    }
+	}
+	R[i] = temp;
+    }
+
+    /**
+     * 堆排序 时间复杂度O(n*log2n)
+     * 
+     * @param R
+     */
+    public static void heapSort(int[] R) {
+	int temp;
+	// 建立初始堆
+	for (int i = (R.length - 1) / 2; i >= 0; i--) {
+	    Sift(R, i, R.length - 1);
+	}
+	for (int i = R.length - 1; i >= 0; i--) {
+	    temp = R[0];
+	    R[0] = R[i];
+	    R[i] = temp;
+	    Sift(R, 0, i);
+	}
+    }
+
 }
