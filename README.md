@@ -58,3 +58,5 @@ DataStructure（Java）
 图结构
 
 - Adjacency_Matrix：邻接矩阵
+
+- Adjacency_List：邻接表
