@@ -18,7 +18,26 @@ public class Adjacency_List {
     public Adjacency_List(int n) {
 	adjList = new Adjacency_List_VNode[n];
 	for (int i = 0; i < adjList.length; i++) {
-	    adjList[i]=new Adjacency_List_VNode();
+	    adjList[i] = new Adjacency_List_VNode();
 	}
     }
+
+    @Override
+    public String toString() {
+	StringBuilder sb = new StringBuilder();
+	for (int i = 0; i < adjList.length; i++) {
+	    sb.append(i).append(": → ");
+	    if (adjList[i].firstarc != null) {
+		sb.append(adjList[i].firstarc.vertex).append(" → ");
+		Adjacency_List_ArcNode p = adjList[i].firstarc.nextarc;
+		while (p != null) {
+		    sb.append(p.vertex).append(" → ");
+		    p = p.nextarc;
+		}
+	    }
+	    sb.append("\r\n");
+	}
+	return sb.toString();
+    }
+
 }
