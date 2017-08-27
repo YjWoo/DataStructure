@@ -13,16 +13,12 @@ public class Adjacency_Matrix {
     // n：顶点数，e：边数
     public int n, e;
     public Adjacency_Matrix_Vertex[] vex = new Adjacency_Matrix_Vertex[maxSize];
-    
-    public Adjacency_Matrix() {
-    }
-    
+
     public Adjacency_Matrix(int[][] edges) {
-	this.edges=edges;
-	this.n=edges.length;
+	this.edges = edges;
+	this.n = edges.length;
     }
-    
-    
+
     @Override
     public String toString() {
 	return "Adjacency_Matrix :" + "\r\n" + print();

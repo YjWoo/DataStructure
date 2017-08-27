@@ -45,4 +45,46 @@ public class Adjacency_Matrix_Algo {
 	System.out.println(s.toString());
 	return sum;
     }
+
+    /**
+     * 迪杰斯特拉算法，求最短路径
+     * 
+     * @param g邻接矩阵
+     * @param v目标顶点
+     */
+    public static void Dijkstra(Adjacency_Matrix g, int v) {
+	boolean[] set = new boolean[g.n];
+	int[] disk = new int[g.n];
+	int[] path = new int[g.n];
+	int min, u = 0;
+	// 初始化
+	for (int i = 0; i < g.n; i++) {
+	    disk[i] = g.edges[v][i];
+	    set[i] = false;
+	    if (g.edges[v][i] < Integer.MAX_VALUE) {
+		path[i] = v;
+	    } else {
+		path[i] = -1;
+	    }
+	}
+	// 关键步骤
+	for (int i = 0; i < path.length; i++) {
+	    min = Integer.MAX_VALUE;
+	    for (int j = 0; j < g.n; j++) {
+		if (set[j] == false && disk[j] < min) {
+		    u = j;
+		    min = disk[j];
+		}
+	    }
+	    set[u] = true;
+	    for (int j = 0; j < g.n; j++) {
+		if (set[j] == false && disk[u] + g.edges[u][j] < disk[j]) {
+		    disk[j] = disk[u] + g.edges[u][j];
+		    path[j] = u;
+		}
+	    }
+	}
+
+	System.out.println("target--> Shortest Path: " + disk[v] + " Previous Node: " + path[v]);
+    }
 }
