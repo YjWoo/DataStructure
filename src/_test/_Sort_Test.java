@@ -10,7 +10,8 @@ public class _Sort_Test {
 	// _Sort.bubbleSort(aa);
 	// _Sort.quickSort(aa, 0, aa.length-1);
 	//_Sort.selectSort(aa);
-	_Sort_Algo.heapSort(aa);
+	//_Sort_Algo.heapSort(aa);
+	_Sort_Algo.shellSort(aa);
 
 	for (int i = 0; i < aa.length; i++) {
 	    System.out.print(aa[i] + " ");

@@ -146,4 +146,25 @@ public class _Sort_Algo {
 	}
     }
 
+    /**
+     * 希尔排序
+     * 
+     * @param R
+     */
+    public static void shellSort(int[] R) {
+	// gap为增量
+	int temp;
+	for (int gap = R.length / 2; gap > 0; gap /= 2) {
+	    for (int i = gap; i < R.length; i++) {
+		int j = i;
+		while (j - gap >= 0 && R[j] < R[j - gap]) {
+		    temp = R[j];
+		    R[j] = R[j - gap];
+		    R[j - gap] = temp;
+		    j -= gap;
+		}
+	    }
+	}
+    }
+
 }
